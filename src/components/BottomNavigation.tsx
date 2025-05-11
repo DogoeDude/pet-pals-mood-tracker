@@ -1,55 +1,41 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Search, User, Compass } from 'lucide-react';
+import { Home, Search, User, MessageCircle, ShoppingCart } from 'lucide-react';
 
 const BottomNavigation = () => {
   const location = useLocation();
   
-  const navItems = [
-    {
-      label: 'Home',
-      icon: Home,
-      path: '/dashboard',
-    },
-    {
-      label: 'Discover',
-      icon: Compass,
-      path: '/discover',
-    },
-    {
-      label: 'Search',
-      icon: Search,
-      path: '/search',
-    },
-    {
-      label: 'Profile',
-      icon: User,
-      path: '/profile',
-    },
-  ];
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
   
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-10">
-      <div className="flex justify-around">
-        {navItems.map((item) => {
-          const isActive = location.pathname === item.path;
-          
-          return (
-            <Link
-              key={item.label}
-              to={item.path}
-              className={`py-2 px-3 flex flex-1 flex-col items-center ${
-                isActive ? 'text-pettalk-blue' : 'text-gray-500'
-              }`}
-            >
-              <div className={`p-1 ${isActive ? 'bg-blue-100 rounded-full' : ''}`}>
-                <item.icon size={20} />
-              </div>
-              <span className="text-xs mt-1">{item.label}</span>
-            </Link>
-          );
-        })}
+    <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border">
+      <div className="flex justify-around items-center h-16 max-w-md mx-auto px-4">
+        <Link to="/dashboard" className={`flex flex-col items-center ${isActive('/dashboard') ? 'text-pettalk-blue' : 'text-gray-500'}`}>
+          <Home size={24} />
+          <span className="text-xs mt-1">Home</span>
+        </Link>
+        <Link to="/discover" className={`flex flex-col items-center ${isActive('/discover') ? 'text-pettalk-blue' : 'text-gray-500'}`}>
+          <MessageCircle size={24} />
+          <span className="text-xs mt-1">Discover</span>
+        </Link>
+        <Link to="/shop" className={`flex flex-col items-center ${isActive('/shop') ? 'text-pettalk-blue' : 'text-gray-500'}`}>
+          <ShoppingCart size={24} />
+          <span className="text-xs mt-1">Shop</span>
+        </Link>
+        <Link to="/messages" className={`flex flex-col items-center ${isActive('/messages') ? 'text-pettalk-blue' : 'text-gray-500'}`}>
+          <MessageCircle size={24} />
+          <span className="text-xs mt-1">Messages</span>
+        </Link>
+        <Link to="/search" className={`flex flex-col items-center ${isActive('/search') ? 'text-pettalk-blue' : 'text-gray-500'}`}>
+          <Search size={24} />
+          <span className="text-xs mt-1">Search</span>
+        </Link>
+        <Link to="/profile" className={`flex flex-col items-center ${isActive('/profile') ? 'text-pettalk-blue' : 'text-gray-500'}`}>
+          <User size={24} />
+          <span className="text-xs mt-1">Profile</span>
+        </Link>
       </div>
     </div>
   );
