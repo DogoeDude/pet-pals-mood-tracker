@@ -1,73 +1,30 @@
-# Welcome to your Lovable project
+Tools used:
+  Lovable AI: For Initial structure for the GUI.
+  Cursor IDE: For overall development.
 
-## Project info
+This Project is a request made from a fellow student for their Pitch Presentation for a competition.
 
-**URL**: https://lovable.dev/projects/a845fec6-d998-4137-8df9-43b17c673883
+This Application includes the following Features:
+  Pet Mood, Health, Hunger Tracker
+  Pet Essentials Store
+  Pet Store Map
+  Social Media for Pet Lovers
+  Online Shop for Pet Essentials
+  Pet Services Map
 
-## How can I edit this code?
+Aside from that, this project requires Machine Learning for the detection of the animal(pet) and their audio.
+The Trained Models will be used for the Pet Mood Tracker.
 
-There are several ways of editing your application.
+Dog Voice Emotion Dataset: https://www.kaggle.com/datasets/shivarao100/dog-voice-emotion-dataset
+Dog and Cat Dataset: https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset
 
-**Use Lovable**
+After the first initial version, the project will be converted to react native for a mobile application deployment.
+For the storing of data and authentication, this will utilize Supabase.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a845fec6-d998-4137-8df9-43b17c673883) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a845fec6-d998-4137-8df9-43b17c673883) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+GUI:
+  ![5](https://github.com/user-attachments/assets/4bf847f8-b109-4bcc-85ba-a47291db4bf0)
+  ![4](https://github.com/user-attachments/assets/af81523c-cb92-4d22-ada4-d747c59c228a)
+  ![3](https://github.com/user-attachments/assets/115969ea-0be0-4b4d-8b22-1f3a94783ebf)
+  ![2](https://github.com/user-attachments/assets/90272912-a07f-4ddc-a4c5-703937bca50d)
+  ![1](https://github.com/user-attachments/assets/e8a871a5-641e-4af4-9955-6c381c0f5c48)
+  ![6](https://github.com/user-attachments/assets/820232fb-e8b6-4c2b-91d1-9d897b59a322)
